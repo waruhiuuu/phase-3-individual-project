@@ -56,3 +56,10 @@ and most importantly:
 - <u><b>.80 - .89:</u></b> Model is performing fairly well. My goal is to be in this range or better.
 - <u><b>.90 - .99:</u></b> Model is performing very well. I would be very happy to have a final model in this range.
 
+## Final Model
+<b>XGBoost Model 2 is my best performing model</b>.
+- It is tied for best Recall Score with Decision Tree 2 at 85.12.
+- It has the second highest F1 Score at 90.35, just slightly below XGBoost Model 1.
+- It has the highest Area Under ROC Curve at .9228.
+
+XGBoost Model 2 is my final model, and will be used for final analysis and recommendations.
