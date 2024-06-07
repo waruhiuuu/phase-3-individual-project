@@ -26,3 +26,19 @@ Based on these factors, I made the following recommendations for SyriaTel to imp
 
 ## Business Problem
 SyriaTel is a telecomunications company that is concerned with the amount of customers that are leaving their service. (ie, Churn). They have provided a dataset of their most recent data which has 14.5% of the customers leaving during the time period captured in the dataset. I have been tasked with analyzing the data and looking for any areas where Churn is significant, and make recommendations as to what SyriaTel can do to greatly reduce the rate of churn in its customers.
+
+## The Data
+The dataset that I was given to work with contains information for 3333 accounts, including:
+- State
+- Account Length
+- Area Code
+- Phone Number
+- Extra Plans (VoiceMail and/or International)
+- Minutes Used (Day, Evening, Night, International)
+- Number of Calls (Day, Evening, Night, International)
+- Number of VoiceMail Messages
+- Total Amount Charged for minutes used (Day, Evening, Night, International)
+- Number of calls to Customer Service
+
+and most importantly:
+- Churn: Customers who cancelled their service.
