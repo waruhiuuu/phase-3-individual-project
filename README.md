@@ -111,3 +111,45 @@ All other features have (at most) half of the feature significance as the top 4.
 - 323 people (27.6% of customers) have a voicemail plan.
 - <b>Customers that do NOT have a voicemail plan have twice the churn rate of customers that do.</b>
 - The churn rate for customers without voicemail is slightly higher than the base churn rate, but since <b>the churn rate for customers with voicemail is significantly lower</b>, this feature does end up having significance.
+
+# Recommendations
+
+## Recommendation #1: Increased Focus on Customer Service.
+- There is a sharp increase in Churn when a Customer reaches their 4th call to customer service. In order to retain more customers, <b>SyriaTel should focus on resolving whatever issues that customers bring up with Customer Service. If all questions are answered, and issues are explained and addressed, this should lead to happier customers, less customer service calls, and less churn.</b>
+- Of course, the call itself isn't the issue. Customer service calls are a sign that something is wrong, and the more that a customer calls, the more likely they are to be having problems with the service and/or paying their bills.
+- I recommend that SyriaTel analyze any data that they have on Customer Service calls to see what issues customers were bringing up and at what frequency. Proactively dealing with these issues will likely cause a decrease in churn.
+
+## Recommendation #2: Take a good look at your international plan and see why it increases the amount of Churn
+- Customers without the international plan are able to make international calls.
+- Customers with the international plan end up leaving. 
+- I don't have data on how much the international plan costs or how it is used, but it is causing higher churn.
+- Perhaps it costs too much, or doesn't give an advantage over not having the plan, or is inferior to the competition.
+- International Minutes and Number of International Calls also have feature importance as well so they should also be investigated.
+
+## Recommendation #3: Offer a Flat Price Model to Combat High Customer Charges
+- Making more money is good, but there is a strong correlation between churn and high charge. This indicates that customers are likely being charged per minute. SyriaTel would ultimately make MORE money by RETAINING the customers that they already have.
+- By charging a flat fee, it eliminates any surprise that the customer has, which should result in less customer service calls, and less churn.
+- The flat fee could be offered in tiers.
+- The point of this recommendation is that customers know how much their bill is each month, even if they go over on minutes, etc.
+
+## Recommendation #4: Encourage Customers to get a Voice Mail Plan
+- Also, analyze to see why there is such a big difference in churn rate when customers don't have a voice mail plan.
+
+## Recommendation #5: Set up a system which identifies when a customer is getting close to any of the thresholds identified above.
+- Please Note: These recommendations are based on the way that everything is currently set up. If my other recommendations are followed, many of these issues would already be taken care of.
+
+### Green: Low Risk of Customer Churn.
+- 0-1 Customer Service Calls.
+- Customer Bill is $60/month or less.
+- Customer does not have International Plan.
+- Customer has Voice Mail Plan
+
+### Yellow: Account is begining to show warning signs of churn. 
+- 2-3 Customer Service Calls
+- Customer Bill is above $60/month (the mean value)
+
+### Red: Account is at high risk of churn.
+- 4 or more Customer Service Calls
+- Customer Monthly Bill is at $74 or higher.
+- Customer has International Plan (in it's current form. See Recommendation #2)
+- Customer does not have a Voice Mail Plan
