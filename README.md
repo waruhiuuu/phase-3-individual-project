@@ -63,3 +63,51 @@ and most importantly:
 - It has the highest Area Under ROC Curve at .9228.
 
 XGBoost Model 2 is my final model, and will be used for final analysis and recommendations.
+
+## Features That Had Most Effect On Churn
+
+![Feature Importance](https://github.com/jxn628/phase_3_project/blob/main/Images/project_3_Feature_Importance.png)
+The Top 4 features with importance in relation to churn are:
+1. A High Amount of Customer Service Calls
+2. Whether or not Customer has International Plan.
+3. Total Charge that Customer has.
+4. Whether or not Customer has a Voice Mail Plan.
+
+All other features have (at most) half of the feature significance as the top 4. However, it is important to note that features 5 & 6 are both related to the International Plan.
+
+## Analysis of Top Features
+
+## Customer Service Calls
+![Churn Rate in Relation to Customer Service Calls](https://github.com/jxn628/phase_3_project/blob/main/Images/project_3_CS_churn.png)
+
+### Analysis:
+- There is a very strong relationship between the number of Customer Service Calls and Churn Rate.
+- If there are 0-3 calls, those customers are below the avg. churn rate.
+- <b>At 4 Calls, the Churn Rate jumps to 45.7%, 4X the avg. churn rate.</b>
+- The Mode for Customer Service Calls is 1, with 2 or more calls being in the top quartile.
+- Over Half of all customers make 1 or less customer service calls. (1878 of 3333: 56%)
+- Hypothesis is that customers that are unhappy (and therefore more likely to cancel their service) are calling customer service more often.
+
+## International Plan
+### Analysis:
+<i>NOTE: Data shows that Customers without the international plan were still able to make international calls. I am operating under the assumption that the data is correct and that there is a seperate International Plan, as indicated by the "International Plan" column. I am also assuming that the data contained in that field is accurate.</i>
+
+- only 323 people (9.5% of customers) have international plans. But those that do have a high rate of churn.
+- <b>churn rate for customers with an international plan is 42.4% vs 11.5% for those without an international plan.</b>
+- nearly 4X increase in churn rate.
+- customers without an international plan are actually under the avg. churn rate, but are close to it.
+- International Minutes and the Number of International Calls were the 5th and 6th most important features. There is definitely something wrong with SyriaTel's International Plan. This will be reflected in my Recommendations.
+
+## Total Charge
+![Churn Rate in Relation to Total Charge](https://github.com/jxn628/phase_3_project/blob/main/Images/Project_3_totalcharge.png)
+
+### Analysis
+- Total Charge of $74 per month leads to Churn Rate of roughly 70% or greater!
+- This affects aprox 240 customers (15 groups of 16)
+- While there a a good amount of customers above the average churn line, if you add an extra 10%, almost all are within that range until you get to the extreme outliers.
+
+## Voice Mail Plan
+### Analysis:
+- 323 people (27.6% of customers) have a voicemail plan.
+- <b>Customers that do NOT have a voicemail plan have twice the churn rate of customers that do.</b>
+- The churn rate for customers without voicemail is slightly higher than the base churn rate, but since <b>the churn rate for customers with voicemail is significantly lower</b>, this feature does end up having significance.
