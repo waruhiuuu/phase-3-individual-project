@@ -177,3 +177,8 @@ Based on these factors, I made the following recommendations for SyriaTel to imp
 5. Put a system into place for identifying when a customer is at high risk for churn and then be proactive in intervening and helping fix anything that may be leading to churn.
 
 <b>SyriaTel will always have churn, but if they focus on dealing with the features which have the greatest impact on churn, their average churn rate will be significantly lower. I have also provided some metrics for them to use to better identify when customers are at an increased chance of churn.</b>
+
+## Links
+[Final Jupyter Notebook](https://github.com/waruhiuuu/phase-3-individual-project/blob/main/SyriaTel%20Customer%20Churn.ipynb)
+
+[Presentation Slides](https://github.com/waruhiuuu/phase-3-individual-project/blob/main/presentation.pdf)
