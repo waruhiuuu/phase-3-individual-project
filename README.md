@@ -25,7 +25,8 @@ Based on these factors, I made the following recommendations for SyriaTel to imp
 
 
 ## Business Problem
-SyriaTel is a telecomunications company that is concerned with the amount of customers that are leaving their service. (ie, Churn). They have provided a dataset of their most recent data which has 14.5% of the customers leaving during the time period captured in the dataset. I have been tasked with analyzing the data and looking for any areas where Churn is significant, and make recommendations as to what SyriaTel can do to greatly reduce the rate of churn in its customers.
+For telecommunication companies to grow their revenue generating base, it is key to attract new customers and at the same time increase customer retention rate. Customer churn is one of the most important concerns for large companies. Customer churn is a metric showing when a subscriber or a regular customer cancels his subscription or stops doing business with a company. Churn could be due to various factors, including switching to a competitor for better price offers, cancelling their subscription because of poor customer service, or discontinuing all contact with a brand due to insufficient touchpoints.
+Syriatel is a provider of mobile telecommunication and data services based in Damascus, Syria. The company offers services including calls, news, message, GSM and internet services. It has successfully established its reputation by focusing on customer satisfaction and social responsibility. Syriatel has established that long-term relationships with customers are more effective than trying to attract new customers. To them, working to keep a client is cheaper than working to get a new client. Churn prediction has therefore become a very important part of the company's strategy. This project aims to develop a model which accurately predicts customers who are most likely to churn, and identify the features that are important for predicting customer churn. Syriatel can thus act to prevent the customer who is likely to churn from actually churning.
 
 ## The Data
 The dataset that I was given to work with contains information for 3333 accounts, including:
@@ -57,16 +58,16 @@ and most importantly:
 - <u><b>.90 - .99:</u></b> Model is performing very well. I would be very happy to have a final model in this range.
 
 ## Final Model
-<b>XGBoost Model 2 is my best performing model</b>.
-- It is tied for best Recall Score with Decision Tree 2 at 85.12.
-- It has the second highest F1 Score at 90.35, just slightly below XGBoost Model 1.
-- It has the highest Area Under ROC Curve at .9228.
+<b>XGBoost Model 1 is my best performing model</b>.
+- It has the best Recall Score at 85.95.
+- It has the highest F1 Score at 92.03.
+- It has the highest Area Under ROC Curve at 0.93.
 
-XGBoost Model 2 is my final model, and will be used for final analysis and recommendations.
+XGBoost Model 1 is my final model, and will be used for final analysis and recommendations.
 
 ## Features That Had Most Effect On Churn
 
-![Feature Importance](https://github.com/jxn628/phase_3_project/blob/main/Images/project_3_Feature_Importance.png)
+![Feature Importance](https://github.com/waruhiuuu/phase-3-individual-project/blob/main/images/project_3_Feature_Importance.png)
 The Top 4 features with importance in relation to churn are:
 1. A High Amount of Customer Service Calls
 2. Whether or not Customer has International Plan.
@@ -78,7 +79,7 @@ All other features have (at most) half of the feature significance as the top 4.
 ## Analysis of Top Features
 
 ## Customer Service Calls
-![Churn Rate in Relation to Customer Service Calls](https://github.com/jxn628/phase_3_project/blob/main/Images/project_3_CS_churn.png)
+![Churn Rate in Relation to Customer Service Calls](https://github.com/waruhiuuu/phase-3-individual-project/blob/main/images/project_3_CS_Churn_Rate.png)
 
 ### Analysis:
 - There is a very strong relationship between the number of Customer Service Calls and Churn Rate.
@@ -99,7 +100,7 @@ All other features have (at most) half of the feature significance as the top 4.
 - International Minutes and the Number of International Calls were the 5th and 6th most important features. There is definitely something wrong with SyriaTel's International Plan. This will be reflected in my Recommendations.
 
 ## Total Charge
-![Churn Rate in Relation to Total Charge](https://github.com/jxn628/phase_3_project/blob/main/Images/Project_3_totalcharge.png)
+![Churn Rate in Relation to Total Charge](https://github.com/waruhiuuu/phase-3-individual-project/blob/main/images/project_3_total_charge_churn.png)
 
 ### Analysis
 - Total Charge of $74 per month leads to Churn Rate of roughly 70% or greater!
