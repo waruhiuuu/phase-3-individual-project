@@ -42,3 +42,17 @@ The dataset that I was given to work with contains information for 3333 accounts
 
 and most importantly:
 - Churn: Customers who cancelled their service.
+
+## Evaluation Metrics
+1. <b>High Recall Score:</b> I want my model to be able to predict which customers are at risk of churning. If it is tuned to be too sensitive in this area, that is fine. <b>I would rather flag customers that aren't going to churn</b> rather than focus on the customers that are likely to stay, and ending up with unexpected churn. <b>I will keep this in balance by checking F1 Score.</b>
+
+2. <b>Good F1 Score:</b>While I am ultimately not concerned with Precision (how well the model predicts customers that will stay), a good F1 score means that the model is performing well on both Recall and Precision. Since Recall and Precision are inverses of each other, a good F1 score ensures that the model isn't skewed too far toward one or the other. (ie, a model that predicts EVERY customer will churn would have perfect Recall, but would be useless).
+
+3. <b>High Cross Validation Score:</b> This ensures that the model isn't overly trained on the test data and that it does a good job of predicted unseen and unknown data. (ie, the test set).
+
+4. <b>Area Under the Curve (AUC):</b> The ROC AUC Score measures the Area under the ROC curve, which means that it classifies the true positive rate against the false positive rate. The higher the score, the better performing the model is. That said, here is the scale that I will use to evaluate my models:
+- <u><b>.69 or less:</u></b> Model performs only slightly better than guessing and is worthless for my analysis.
+- <u><b>.70 - .79:</u></b> Model still isn't performing very well, but is at minimum acceptable levels.
+- <u><b>.80 - .89:</u></b> Model is performing fairly well. My goal is to be in this range or better.
+- <u><b>.90 - .99:</u></b> Model is performing very well. I would be very happy to have a final model in this range.
+
